@@ -11,8 +11,8 @@ parent.insertBefore(addition,target.nextSibling);
 }
 }
 var adscont = document.getElementById(&quot;ads&quot;);
-var target = document.getElementById(&quot;con&quot;);
-var linebreak = target.getElementsByTagName(&quot;p&quot;);
+var target = document.querySelectorAll(&quot;article&quot;);
+var linebreak = target[0].getElementsByTagName(&quot;p&quot;);
 if (linebreak.length &gt; 0){
 insertAfter(adscont,linebreak[5]);
 }
